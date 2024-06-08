@@ -4,6 +4,10 @@ FLAGS = -Wall -Wextra -Werror -g #-fsanitize=address
 
 CC = gcc
 
+# Assuming libft.h is in the root directory
+INCLUDE = -I.
+
+# List of source files
 SRC = \
 	character/ft_isalnum.c \
 	character/ft_isalpha.c \
@@ -42,10 +46,14 @@ SRC = \
 	number/ft_atoi.c \
 	number/ft_putunbr.c \
 	\
-	printf/ft_putchar_fd.c \
-	printf/ft_putendl_fd.c \
-	printf/ft_putnbr_fd.c \
-	printf/ft_putstr_fd.c \
+	print/ft_printf_putchar_fd.c \
+	print/ft_printf_putnbr_fd.c \
+	print/ft_printf_putstr_fd.c \
+	print/ft_putendl_fd.c \
+	print/ft_putchar_fd.c \
+	print/ft_putendl_fd.c \
+	print/ft_putnbr_fd.c \
+	print/ft_putstr_fd.c \
 	\
 	string/ft_split.c \
 	string/ft_strchr.c \
@@ -64,8 +72,12 @@ SRC = \
 
 OBJ = $(SRC:.c=.o)
 
+# Compile object files
+%.o: %.c
+	$(CC) $(FLAGS) $(INCLUDE) -c $< -o $@
+
+# Build the library
 $(NAME): $(OBJ)
-	$(CC) $(FLAGS) -c $(SRC) -I./
 	ar -rc $(NAME) $(OBJ)
 
 all: $(NAME)

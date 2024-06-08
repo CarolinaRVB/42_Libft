@@ -6,14 +6,14 @@
 /*   By: crebelo- <crebelo-@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/17 18:26:34 by crebelo-          #+#    #+#             */
-/*   Updated: 2023/04/23 12:05:14 by crebelo-         ###   ########.fr       */
+/*   Updated: 2024/06/08 16:55:13 by crebelo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 // Joins two strings
 #include "libft.h"
 
-char	*ft_strjoin(char const *s1, char const *s2)
+char	*ft_strjoin(char *s1, char *s2)
 {
 	size_t	s1len;
 	size_t	s2len;

@@ -6,7 +6,7 @@
 /*   By: crebelo- <crebelo-@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/17 18:28:31 by crebelo-          #+#    #+#             */
-/*   Updated: 2023/11/13 14:00:24 by crebelo-         ###   ########.fr       */
+/*   Updated: 2024/06/08 16:35:50 by crebelo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,7 +59,7 @@ void		ft_putnbr_fd(int n, int fd);
 void		ft_putchar_fd(char c, int fd);
 void		ft_putstr_fd(char *s, int fd);
 void		ft_putendl_fd(char *s, int fd);
-char		*ft_strjoin(char const *s1, char const *s2);
+char		*ft_strjoin(char *s1, char *s2);
 char		*ft_strtrim(char const *s1, char const *set);
 char		**ft_split(char const *s, char c);
 char		*ft_itoa(int n);
@@ -92,6 +92,5 @@ void		ft_createline(char **line, char *stash);
 void		ft_clean(char **stash);
 int			ft_findnl(char *stash);
 void		createstash(char **stash, char *buff);
-
 
 #endif

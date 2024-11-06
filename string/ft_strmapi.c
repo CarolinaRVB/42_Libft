@@ -6,11 +6,11 @@
 /*   By: crebelo- <crebelo-@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/23 22:45:42 by crebelo-          #+#    #+#             */
-/*   Updated: 2023/04/24 17:37:22 by crebelo-         ###   ########.fr       */
+/*   Updated: 2023/11/13 12:30:36 by crebelo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft.h"
 
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {

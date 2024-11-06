@@ -6,14 +6,14 @@
 /*   By: crebelo- <crebelo-@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/17 18:21:30 by crebelo-          #+#    #+#             */
-/*   Updated: 2023/04/23 11:44:20 by crebelo-         ###   ########.fr       */
+/*   Updated: 2023/11/13 12:29:04 by crebelo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 // The memchr() function scans the initial n bytes of the memory
 // area pointed to by s for the first instance of c.
 // Return pointer to the matching byte or null if not found. 
-#include "libft.h"
+#include "../libft.h"
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {

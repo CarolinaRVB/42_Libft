@@ -6,7 +6,7 @@
 /*   By: crebelo- <crebelo-@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/17 18:26:34 by crebelo-          #+#    #+#             */
-/*   Updated: 2023/04/26 14:20:23 by crebelo-         ###   ########.fr       */
+/*   Updated: 2023/11/13 12:30:56 by crebelo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 // given start position with the 
 // given length (or smaller if the length of the original string is less than 
 // start + length, or length is bigger than MAXSTRINGLEN).
-#include "libft.h"
+#include "../libft.h"
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
@@ -36,6 +36,6 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 			j++;
 		}
 		return (sub);
-	}	
+	}
 	return (NULL);
 }

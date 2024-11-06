@@ -1,25 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstiter.c                                       :+:      :+:    :+:   */
+/*   ft_checkfileext.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: crebelo- <crebelo-@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/04/23 22:45:42 by crebelo-          #+#    #+#             */
-/*   Updated: 2023/11/13 12:28:31 by crebelo-         ###   ########.fr       */
+/*   Created: 2023/11/15 13:49:10 by crebelo-          #+#    #+#             */
+/*   Updated: 2023/12/08 21:07:02 by crebelo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../libft.h"
 
-void	ft_lstiter(t_list *lst, void (*f)(void *))
+int	ft_checkfileext(char *filename, char *extension)
 {
-	t_list	*tmp;
+	char	sep;
+	int		beginning;
 
-	while (lst)
-	{
-		tmp = lst->next;
-		f(lst->content);
-		lst = tmp;
-	}
+	if (!filename || !extension)
+		return (1);
+	sep = extension[0];
+	beginning = ft_strlen(filename) - ft_strlen(extension);
+	if (ft_strnstr(&filename[beginning], extension, ft_strlen(extension)) == 0)
+		return (1);
+	return (0);
 }

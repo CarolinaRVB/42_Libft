@@ -1,13 +1,21 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    Makefile                                           :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: crebelo- <crebelo-@student.42lisboa.com    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2023/11/13 12:48:40 by crebelo-          #+#    #+#              #
+#    Updated: 2023/12/07 17:48:56 by crebelo-         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
 NAME = libft.a
 
 FLAGS = -Wall -Wextra -Werror -g #-fsanitize=address
 
 CC = gcc
 
-# Assuming libft.h is in the root directory
-INCLUDE = -I.
-
-# List of source files
 SRC = \
 	character/ft_isalnum.c \
 	character/ft_isalpha.c \
@@ -46,23 +54,27 @@ SRC = \
 	number/ft_atoi.c \
 	number/ft_putunbr.c \
 	\
-	print/ft_printf_putchar_fd.c \
-	print/ft_printf_putnbr_fd.c \
-	print/ft_printf_putstr_fd.c \
-	print/ft_putendl_fd.c \
 	print/ft_putchar_fd.c \
 	print/ft_putendl_fd.c \
 	print/ft_putnbr_fd.c \
 	print/ft_putstr_fd.c \
+	print/ft_printf_putchar_fd.c \
+	print/ft_printf_putnbr_fd.c \
+	print/ft_printf_putstr_fd.c \
 	\
+	string/ft_checkfileext.c \
+	string/ft_checkiffileopens.c \
+	string/ft_countchr.c \
 	string/ft_split.c \
 	string/ft_strchr.c \
+	string/ft_strcmpchrs.c \
 	string/ft_strdup.c \
 	string/ft_striteri.c \
 	string/ft_strjoin.c \
 	string/ft_strlcat.c \
 	string/ft_strlcpy.c \
 	string/ft_strlen.c \
+	string/ft_strlen_nl.c \
 	string/ft_strmapi.c \
 	string/ft_strncmp.c \
 	string/ft_strnstr.c \
@@ -72,18 +84,13 @@ SRC = \
 
 OBJ = $(SRC:.c=.o)
 
-# Compile object files
-%.o: %.c
-	$(CC) $(FLAGS) $(INCLUDE) -c $< -o $@
-
-# Build the library
 $(NAME): $(OBJ)
 	ar -rc $(NAME) $(OBJ)
 
 all: $(NAME)
 
 clean:
-	rm -f $(OBJ)
+	rm -f $(OBJ) 
 
 fclean: clean
 	rm -f $(NAME)

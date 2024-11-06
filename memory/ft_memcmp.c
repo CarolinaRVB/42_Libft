@@ -6,7 +6,7 @@
 /*   By: crebelo- <crebelo-@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/17 18:22:10 by crebelo-          #+#    #+#             */
-/*   Updated: 2023/04/23 11:47:10 by crebelo-         ###   ########.fr       */
+/*   Updated: 2023/11/13 12:29:08 by crebelo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
 // respectively, to be less than, to match, or be greater than the
 // first n bytes of s2.
 
-#include "libft.h"
+#include "../libft.h"
 
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {

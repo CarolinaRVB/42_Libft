@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   get_next_line_utils_bonus.c                        :+:      :+:    :+:   */
+/*   get_next_line_utils.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: crebelo- <crebelo-@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -10,9 +10,9 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft.h"
 
-char	*ft_strjoin(char *s1, char *s2)
+char	*ft_gnl_strjoin(char *s1, char *s2)
 {
 	size_t	s1len;
 	size_t	s2len;
@@ -26,7 +26,7 @@ char	*ft_strjoin(char *s1, char *s2)
 	i = 0;
 	sjoin = ft_calloc(s1len + s2len + 1, sizeof(char));
 	if (sjoin)
-	{	
+	{
 		while (s1[i] != '\0')
 		{
 			sjoin[i] = s1[i];
@@ -38,28 +38,6 @@ char	*ft_strjoin(char *s1, char *s2)
 	}
 	free(sjoin);
 	return (NULL);
-}
-
-void	*ft_calloc(size_t nmemb, size_t size)
-{
-	void			*p;
-	size_t			total_size;
-	size_t			i;
-	unsigned char	*ptr;
-
-	total_size = nmemb * size;
-	p = malloc(total_size);
-	ptr = (unsigned char *)p;
-	if (p)
-	{
-		i = 0;
-		while (i < total_size)
-		{
-			ptr[i] = 0;
-			i++;
-		}	
-	}	
-	return (p);
 }
 
 int	ft_findnl(char *stash)
@@ -84,10 +62,10 @@ void	createstash(char **stash, char *buff)
 
 	if (*stash == NULL)
 	{
-		*stash = ft_strjoin("", buff);
+		*stash = ft_gnl_strjoin("", buff);
 		return ;
 	}
-	tmp = ft_strjoin(*stash, buff);
+	tmp = ft_gnl_strjoin(*stash, buff);
 	free(*stash);
 	*stash = tmp;
 }

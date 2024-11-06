@@ -6,7 +6,7 @@
 /*   By: crebelo- <crebelo-@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/17 18:26:08 by crebelo-          #+#    #+#             */
-/*   Updated: 2023/04/24 17:44:55 by crebelo-         ###   ########.fr       */
+/*   Updated: 2023/11/13 12:30:40 by crebelo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 // hitting a '\0' character, whichever 
 // comes first. memcmp() does not terminate if it 
 // encounters a '\0' character
-#include "libft.h"
+#include "../libft.h"
 
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {

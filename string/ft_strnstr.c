@@ -6,11 +6,11 @@
 /*   By: crebelo- <crebelo-@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/17 18:26:20 by crebelo-          #+#    #+#             */
-/*   Updated: 2023/04/19 13:08:51 by crebelo-         ###   ########.fr       */
+/*   Updated: 2023/11/13 12:30:45 by crebelo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft.h"
 
 char	*ft_strnstr(const char *big, const char *little, size_t len)
 {

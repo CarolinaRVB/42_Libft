@@ -6,13 +6,13 @@
 /*   By: crebelo- <crebelo-@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/17 18:22:45 by crebelo-          #+#    #+#             */
-/*   Updated: 2023/04/26 23:22:49 by crebelo-         ###   ########.fr       */
+/*   Updated: 2023/11/13 12:29:16 by crebelo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 // The memmove() function copies n bytes from memory area src to
 // memory area dest.  The memory areas may overlap
-#include "libft.h"
+#include "../libft.h"
 
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {

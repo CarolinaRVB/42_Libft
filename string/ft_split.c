@@ -14,7 +14,7 @@
 // Allocated memory to new array that 
 // will contain the split string and will be returned
 // Ends with null pointer.
-#include "libft.h"
+#include "../libft.h"
 
 static int	count_words(char const *s, char c)
 {

@@ -1,28 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putnbr_hex.c                                    :+:      :+:    :+:   */
+/*   ft_checkiffileopens.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: crebelo- <crebelo-@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/05/04 10:00:53 by crebelo-          #+#    #+#             */
-/*   Updated: 2023/05/04 10:00:53 by crebelo-         ###   ########.fr       */
+/*   Created: 2023/11/30 18:51:25 by crebelo-          #+#    #+#             */
+/*   Updated: 2023/11/30 18:51:25 by crebelo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../libft.h"
 
-void	ft_putnbr_hex(unsigned int n, char *base, size_t *len)
+int	checkiffileopens(char *file, int flag)
 {
-	if (n == 0)
+	int	fd;
+
+	fd = open(file, flag);
+	if (!fd || fd == -1)
+		return (1);
+	else
 	{
-		ft_printf_putchar_fd('0', 1, len);
-		return ;
+		close(fd);
+		return (0);
 	}
-	while (n >= 16)
-	{
-		ft_putnbr_hex(n / 16, base, len);
-		n %= 16;
-	}
-	ft_printf_putchar_fd((base[n]), 1, len);
 }

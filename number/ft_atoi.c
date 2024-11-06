@@ -6,14 +6,14 @@
 /*   By: crebelo- <crebelo-@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/17 18:19:31 by crebelo-          #+#    #+#             */
-/*   Updated: 2023/04/23 22:49:33 by crebelo-         ###   ########.fr       */
+/*   Updated: 2023/11/13 12:29:24 by crebelo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 // The atoi() function converts the initial portion of the string
 // pointed to by nptr to int. Ascii to Integer
 // Atoi does not detect errors.
-#include "libft.h"
+#include "../libft.h"
 
 int	ft_atoi(const char *nptr)
 {

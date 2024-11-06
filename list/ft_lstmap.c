@@ -6,11 +6,11 @@
 /*   By: crebelo- <crebelo-@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/23 16:48:26 by crebelo-          #+#    #+#             */
-/*   Updated: 2023/04/26 21:12:33 by crebelo-         ###   ########.fr       */
+/*   Updated: 2023/11/13 12:28:44 by crebelo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft.h"
 
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {

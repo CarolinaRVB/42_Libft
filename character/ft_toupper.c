@@ -6,11 +6,11 @@
 /*   By: crebelo- <crebelo-@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/17 18:27:07 by crebelo-          #+#    #+#             */
-/*   Updated: 2023/04/17 18:27:11 by crebelo-         ###   ########.fr       */
+/*   Updated: 2023/11/13 12:27:43 by crebelo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft.h"
 
 int	ft_toupper(int c)
 {

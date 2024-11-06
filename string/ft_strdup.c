@@ -6,14 +6,14 @@
 /*   By: crebelo- <crebelo-@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/17 18:24:58 by crebelo-          #+#    #+#             */
-/*   Updated: 2023/04/23 22:08:07 by crebelo-         ###   ########.fr       */
+/*   Updated: 2023/11/13 12:30:12 by crebelo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 // The strdup() function returns a pointer to a new string which is
 // a duplicate of the string s.  Memory for the new string is
 // obtained with malloc(3)
-#include "libft.h"
+#include "../libft.h"
 
 char	*ft_strdup(const char *s)
 {

@@ -6,11 +6,11 @@
 /*   By: crebelo- <crebelo-@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/17 18:20:52 by crebelo-          #+#    #+#             */
-/*   Updated: 2023/04/26 22:26:20 by crebelo-         ###   ########.fr       */
+/*   Updated: 2023/11/13 12:27:21 by crebelo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft.h"
 
 int	ft_isdigit(int num)
 {

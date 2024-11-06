@@ -6,7 +6,7 @@
 /*   By: crebelo- <crebelo-@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/17 18:25:25 by crebelo-          #+#    #+#             */
-/*   Updated: 2023/04/26 23:39:06 by crebelo-         ###   ########.fr       */
+/*   Updated: 2023/11/13 12:30:25 by crebelo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@
 // is considered to be size and the destination string 
 // will not be NUL-terminated 
 // (since there was no space for the NUL). 
-#include "libft.h"
+#include "../libft.h"
 
 size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {

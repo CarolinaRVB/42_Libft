@@ -1,25 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstiter.c                                       :+:      :+:    :+:   */
+/*   ft_strlen_nl.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: crebelo- <crebelo-@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/04/23 22:45:42 by crebelo-          #+#    #+#             */
-/*   Updated: 2023/11/13 12:28:31 by crebelo-         ###   ########.fr       */
+/*   Created: 2023/11/13 19:23:29 by crebelo-          #+#    #+#             */
+/*   Updated: 2023/11/17 18:36:38 by crebelo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../libft.h"
 
-void	ft_lstiter(t_list *lst, void (*f)(void *))
+size_t	ft_strlen_nl(const char *s)
 {
-	t_list	*tmp;
+	int	i;
 
-	while (lst)
+	i = 0;
+	while (s[i] != '\0' && s[i] != '\n')
 	{
-		tmp = lst->next;
-		f(lst->content);
-		lst = tmp;
+		i++;
 	}
+	return (i);
 }
